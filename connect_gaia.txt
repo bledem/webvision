@@ -1,0 +1,19 @@
+export ROS_MASTER_URI=http://gaia:11311
+export ROS_HOSTNAME=tegra
+
+
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=localhost
+
+
+##optor
+ rosrun optor_stereo_visensor_ros stereo_visensor_node /home/nvidia/catkin_ws/optor_vi-stereo-v1/optor_VI_Sensor_SDK_V1.0/SDK/optor_VISensor_Setups.txt 
+
+
+
+sudo -s
+rosrun optor_stereo_visensor_ros stereo_visensonode /home/nvidia/catkin_ws/src/optor_stereo_visensor/optor_VISensor_Setups.txt
+
+#gazebo
+roslaunch darknet_ros yolo_v3_gazebo_drone.launch 
+
